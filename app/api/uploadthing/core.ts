@@ -4,7 +4,6 @@ import { UploadThingError } from "uploadthing/server";
 
 const f = createUploadthing();
 
-
 // FileRouter for your app, can contain multiple FileRoutes
 export const ourFileRouter = {
   // Define as many FileRoutes as you like, each with a unique routeSlug
@@ -24,7 +23,7 @@ export const ourFileRouter = {
       const session = await auth();
 
       // If you throw, the user will not be able to upload
-      if (!session||!session.user) throw new UploadThingError("Unauthorized");
+      if (!session || !session.user) throw new UploadThingError("Unauthorized");
 
       // Whatever is returned here is accessible in onUploadComplete as `metadata`
       return { userId: session.user.id };

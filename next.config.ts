@@ -1,11 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images:{
-    remotePatterns:[{
-      hostname:"btawlusa03.ufs.sh",
-    }]
-  }
+  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        hostname: "ovco9b5jyh.ufs.sh",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
